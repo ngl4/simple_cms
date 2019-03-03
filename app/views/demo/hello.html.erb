@@ -22,3 +22,11 @@ end %>
 <% end %>
 
 <%= link_to('Index Page', {:action => 'index'})%>
+
+<br />
+
+ID: <%= @id %><br />
+ID: <%= params[:id] %><br />
+Page: <%= @page %><br />
+Next page: <%= @page.to_i + 1 %><br />
+<%# to_i methond is used to convert the string @page to a number %>
