@@ -7,7 +7,11 @@ class DemoController < ApplicationController
     # normally this is used with if-else-condition 
   end
 
+  # Instance Variable --- used to transfer data from controller to view, 
+  # always start with @ ie, @string
+
   def hello
+    @array = [1,2,3,4,5]
     render('hello')
   end
 
