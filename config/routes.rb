@@ -18,5 +18,8 @@ Rails.application.routes.draw do
   # root 'demo#index'
   # local host will go to this index page instead of the ruby starter page
 
+
+  get 'demo/hello'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
