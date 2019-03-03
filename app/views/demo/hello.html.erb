@@ -1,1 +1,19 @@
 <h1>Hello World from Hello!!</h1>
+
+<%= 1 + 1 %><br />
+
+<% target = "world" %>
+<%# Line 5 will execute the ruby code WITHOUT the output on the browser page %>
+<%= "Hello #{target}"%><br />
+<%# Line 7 will execute the ruby code WITH the output on the browser page %>
+
+<% 3.times do |n|
+    puts n
+end %>
+<%# Line 10-12 will execute 3 on the browser page, but you will see 0, 1, 2 in the browser %>
+
+<% 3.times do |n|%>
+    <%= n %><br />
+<% end %>
+<%# Line 15-17 will execute 0, 1, 2 in the browser %>
+
