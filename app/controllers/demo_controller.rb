@@ -10,4 +10,13 @@ class DemoController < ApplicationController
   def hello
     render('hello')
   end
+
+  def other_hello
+    redirect_to(:controller => 'demo', :action => 'hello')
+  end
+
+  def google_search
+    redirect_to('http://www.google.com')
+  end
+
 end
